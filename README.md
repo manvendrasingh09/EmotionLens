@@ -85,32 +85,34 @@ The dataset is **balanced**, ensuring fair representation across all emotion cla
 - **Comparative Performance:**
   - Outperforms traditional FER models like VGG-Face, Norface, and Multi-task EfficientNet-B2 on the AffectNet dataset.
  
-<img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/PwC.png" width="500"/>
+<img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/PwC%20Graph.png" width="500"/>
 
 ---
 
-## Running the Model
+## Run Locally with [Docker](https://hub.docker.com/r/kshitizb/emotionlens)
 
-### 1. Clone the Repository
+### **1. Pull the Image**
 ```sh
-git clone https://github.com/yourusername/EmotionLens.git
-cd EmotionLens
+docker pull kshitizb/emotionlens
 ```
 
-### 2. Install Dependencies
+### **2. Run the Container**
 ```sh
-pip install -r requirements.txt
+docker run -p 8020:8020 kshitizb/emotionlens
+```
+Then open: **http://localhost:8020/**
+
+### **3. Access the API**
+Once the container is running, open a browser and go to:
+
+```
+http://<your-server-ip>:8020
 ```
 
-### 3. Run the Model
-```sh
-python EmotionLens.py
-```
+Or test via **FastAPI interactive docs**:
 
-### 4. Test with an Image
-Upload an image to test the emotion detection:
-```sh
-python test_image.py --image sample.jpg
+```
+http://<your-server-ip>:8020/docs
 ```
 
 ---
@@ -126,20 +128,18 @@ python test_image.py --image sample.jpg
 ## Acknowledgments
 
 We would like to express our sincere gratitude to:
-- **VIT University** for providing the platform and resources for this research.
-- **Prof. Krishnaraj Natarajan** for his continuous mentorship and insights.
-- **Contributors and researchers** in the field of FER whose work inspired and informed our approach.
-- **The open-source community** for valuable tools and frameworks that enabled the development of this model.
-
+- **VIT University** for providing the platform and resources to conduct this research.
+- **Our mentors and advisors** for their continuous guidance and constructive feedback throughout the project.
+- **Contributors and researchers** in the field of wildfire detection whose work inspired and informed our approach.
+- **The open-source community** for providing valuable tools and frameworks that enabled the development of this model.
+  
 ---
 
 ## License
 
-This project is released for **academic and research purposes only**.  
-You can view and access the source code from our repository, but **any commercial use or distribution requires prior permission**.
+This project is released for academic and research purposes only.  
+You can view and access the source code from our repository, but any commercial use or distribution requires prior permission.  
 
-🔗 **[EmotionLens Source Code](https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/EmotionLens.ipynb)**  
+🔗 **[PyroDetect Source Code](https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/PyroDetect.ipynb)**  
 
 For inquiries regarding licensing and usage, please contact the authors.
-
----
