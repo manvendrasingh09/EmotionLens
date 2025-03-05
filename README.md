@@ -99,21 +99,21 @@ docker pull kshitizb/emotionlens
 
 ### **2. Run the Container**
 ```sh
-docker run -p 8020:8020 kshitizb/emotionlens
+docker run -p 8010:8010 kshitizb/emotionlens
 ```
-Then open: **http://localhost:8020/**
+Then open: **http://localhost:8010/**
 
 ### **3. Access the API**
 Once the container is running, open a browser and go to:
 
 ```
-http://<your-server-ip>:8020
+http://<your-server-ip>:8010
 ```
 
 Or test via **FastAPI interactive docs**:
 
 ```
-http://<your-server-ip>:8020/docs
+http://<your-server-ip>:8010/docs
 ```
 
 ---
