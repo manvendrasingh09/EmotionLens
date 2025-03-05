@@ -42,7 +42,7 @@ The **EmotionLens** model integrates:
    - Image resizing, normalization, and brightness adjustments to improve robustness.
    - Augmentation techniques such as rotation, flipping, and scaling to enhance model adaptability across diverse expressions.
 
-<img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/Architecture.png" width="500"/>
+<img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/Architecture.png"/>
 
 ### Dataset
 
@@ -58,6 +58,8 @@ EmotionLens is trained on the **AffectNet dataset**, consisting of **28,175 high
 
 The dataset is **balanced**, ensuring fair representation across all emotion classes.
 
+<img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/Dataset.png" width="500"/>
+
 ---
 
 ## Results
@@ -72,10 +74,18 @@ The dataset is **balanced**, ensuring fair representation across all emotion cla
 ### Evaluation Metrics
 - **Confusion Matrix:**
   - Analyzes correct and misclassified expressions across emotion categories.
+
+<img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/Confusion%20Matrix.png" width="500"/>
+  
 - **ROC-AUC Curve:**
   - A mean AUC score of **0.96+** confirms high confidence in model predictions.
+
+<img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/ROC.png" width="500"/>
+
 - **Comparative Performance:**
   - Outperforms traditional FER models like VGG-Face, Norface, and Multi-task EfficientNet-B2 on the AffectNet dataset.
+ 
+<img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/PwC.png" width="500"/>
 
 ---
 
