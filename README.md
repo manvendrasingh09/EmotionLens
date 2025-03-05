@@ -1,4 +1,4 @@
-# <img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/EmotionLens.png" alt="EmotionLens Logo" width="30" style="vertical-align: middle;"/> EmotionLens: Optimizing FER with a Lightweight Residual CNN Architecture
+# <img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/EmotionLens.jpeg" alt="EmotionLens Logo" width="30" style="vertical-align: middle;"/> EmotionLens: Optimizing FER with a Lightweight Residual CNN Architecture
 
 ## Overview
 
