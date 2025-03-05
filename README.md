@@ -84,7 +84,7 @@ The dataset is **balanced**, ensuring fair representation across all emotion cla
 <img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/ROC.png" width="500"/>
 
 - **Comparative Performance:**
-  - Outperforms traditional FER models like VGG-Face, Norface, and Multi-task EfficientNet-B2 on the AffectNet dataset.
+  - Outperforms traditional FER models like VGG-Face, Norface, and Multi-task EfficientNet-B2 on the AffectNet dataset. [Source]([https://hub.docker.com/r/kshitizb/emotionlens](https://paperswithcode.com/sota/facial-expression-recognition-on-affectnet))
  
 <img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/PwC%20Graph.png" width="500"/>
 
@@ -131,7 +131,7 @@ http://<your-server-ip>:8020/docs
 We would like to express our sincere gratitude to:
 - **VIT University** for providing the platform and resources to conduct this research.
 - **Our mentors and advisors** for their continuous guidance and constructive feedback throughout the project.
-- **Contributors and researchers** in the field of wildfire detection whose work inspired and informed our approach.
+- **Contributors and researchers** in the field of emotion detection whose work inspired and informed our approach.
 - **The open-source community** for providing valuable tools and frameworks that enabled the development of this model.
   
 ---
