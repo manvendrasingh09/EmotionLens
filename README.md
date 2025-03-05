@@ -140,6 +140,6 @@ We would like to express our sincere gratitude to:
 This project is released for academic and research purposes only.  
 You can view and access the source code from our repository, but any commercial use or distribution requires prior permission.  
 
-🔗 **[PyroDetect Source Code](https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/PyroDetect.ipynb)**  
+🔗 **[EmotionLens Source Code](https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/EmotionLens.ipynb)**  
 
 For inquiries regarding licensing and usage, please contact the authors.
