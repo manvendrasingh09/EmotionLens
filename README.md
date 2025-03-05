@@ -1,64 +1,90 @@
-# EmotionLens: AI-Powered Facial Expression Recognition System
+# <img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/EmotionLens.png" alt="EmotionLens Logo" width="30" style="vertical-align: middle;"/> EmotionLens: Optimizing FER with a Lightweight Residual CNN Architecture
 
 ## Overview
 
-**EmotionLens** is an AI-based facial expression recognition system that employs a **custom Convolutional Neural Network (CNN)** to classify human emotions accurately. The project is designed to enhance emotion analysis, mental health monitoring, and human-computer interaction by providing a reliable and scalable emotion detection model.
+This repository presents the research titled **"Optimizing Facial Expression Recognition (FER) with a Lightweight Residual CNN Architecture"**, conducted at **Vellore Institute of Technology (VIT), India**.
 
-### Problem Statement
+The project, **EmotionLens**, introduces a novel AI-powered facial expression recognition system leveraging **Residual Convolutional Neural Networks (ResNet CNNs)** to enhance emotion classification accuracy and real-time performance. This repository outlines the methodology, datasets, and results.
 
-Facial expression recognition (FER) is crucial for various applications, including behavioral studies, security, and emotional AI. However, existing models face challenges such as:
-- **Subtle Expression Differentiation:** Difficulty in distinguishing similar emotions like fear and surprise.
-- **Environmental Variability:** Sensitivity to lighting conditions, facial pose variations, and occlusions.
-- **Limited Generalization:** Many models perform well on specific datasets but fail in diverse real-world conditions.
-
-To address these issues, EmotionLens is built with a custom CNN architecture, eliminating dependencies on pre-trained models and ensuring better adaptability and efficiency.
+---
 
 ## Contributors
 
-👨‍💻 **Manvendra Singh** - [LinkedIn](#) | [GitHub](#)  
-👨‍💻 **Kshitiz Bhargava** - [LinkedIn](#) | [GitHub](#)  
+👨‍💻 **Manvendra Singh** - [Linkedin](https://www.linkedin.com/in/manvendrasingh09)  [Github](https://github.com/manvendrasingh09)
+👨‍💻 **Kshitiz Bhargava** - [Linkedin](https://www.linkedin.com/in/kshitiz-bhargava)  [Github](https://github.com/Kshitiz-b)
 
-**Affiliation:** Department of Software Systems, School of Computer Science & Engineering, Vellore Institute of Technology, India.  
+> **Affiliation:** Department of Software Systems, School of Computer Science & Engineering, Vellore Institute of Technology, India.  
+> **Contact Emails:** m.s.jaunpur@gmail.com, kshitizbhargava2626@gmail.com
 
-## Features & Highlights
+---
 
-- **Custom CNN Model:** Tailored for facial expression recognition with optimized feature extraction layers.
-- **Emotion Classification:** Detects eight emotions - **Surprise, Fear, Neutral, Sad, Disgust, Contempt, Happy, and Anger**.
-- **Real-time Recognition:** Supports image uploads for instant emotion prediction.
-- **Optimized Performance:** Eliminates reliance on pre-trained models, ensuring efficiency and interpretability.
-- **Scalability:** Future-ready to accommodate additional emotion categories and real-world datasets.
+## Project Highlights
 
-## Dataset
+- **Problem Addressed:** Despite advancements, FER models struggle with real-world generalization due to subtle expression variations, environmental conditions, and dataset limitations. Existing pre-trained models are computationally expensive and not optimized for FER-specific tasks.
+- **Solution Provided:** EmotionLens utilizes a deep learning approach featuring:
+  - **Custom Residual CNN Architecture** - Optimized for subtle expression recognition using hierarchical feature extraction.
+  - **Regularization Techniques** - Implementing batch normalization, dropout, and LeakyReLU activation to improve training stability and prevent overfitting.
+  - **Data Augmentation** - Image preprocessing, resizing, and augmentation techniques to enhance model generalization across various facial expressions.
+- **Key Achievement:** EmotionLens achieves high accuracy, precision, and recall, outperforming conventional FER models by improving interpretability and computational efficiency.
 
-EmotionLens is trained on **28,175 images**, covering the following emotions:
-- Surprise (~16.4%)
-- Happy (~15.4%)
-- Neutral (~10.2%)
-- Sad (~10.6%)
-- Fear, Disgust, Contempt, and Anger (~11-13% each)
+---
 
-The dataset is balanced to minimize bias, ensuring robust model performance across all emotion categories.
+## Methodology
 
-## Model Architecture
+### Proposed Architecture
+The **EmotionLens** model integrates:
 
-The **EmotionLens CNN model** comprises:
-1. **Convolutional Layers:** Extract hierarchical features from facial images.
-2. **Batch Normalization & Dropout:** Enhances training stability and prevents overfitting.
-3. **Activation Functions:** Uses ReLU and Softmax for non-linearity and classification.
-4. **Optimization:** Trained with Adam optimizer and cross-entropy loss for efficient learning.
+1. **Residual Convolutional Neural Network (ResNet CNN):**
+   - Designed specifically for FER to improve gradient propagation and feature specificity.
+   - Includes LeakyReLU activation, batch normalization, and dropout layers for optimized learning.
+   
+2. **Dataset Augmentation:**
+   - Image resizing, normalization, and brightness adjustments to improve robustness.
+   - Augmentation techniques such as rotation, flipping, and scaling to enhance model adaptability across diverse expressions.
 
-## Results & Evaluation
+<img src="https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/Architecture.png" width="500"/>
 
-EmotionLens achieves high classification performance:
-- **F1 Score:** 0.7425
-- **Multiclass ROC AUC Score:** 0.9642
+### Dataset
+
+EmotionLens is trained on the **AffectNet dataset**, consisting of **28,175 high-resolution images**, categorized into eight emotions:
+
+| Emotion  | Percentage |
+|----------|-----------|
+| Surprise | ~16.4%    |
+| Happy    | ~15.4%    |
+| Neutral  | ~10.2%    |
+| Sad      | ~10.6%    |
+| Fear, Disgust, Contempt, Anger | ~11-13% each |
+
+The dataset is **balanced**, ensuring fair representation across all emotion classes.
+
+---
+
+## Results
+
+### Model Performance
+| Metric                | Value  |
+|----------------------|--------|
+| **Test Accuracy**   | 73.96% |
+| **F1 Score**       | 0.7426  |
+| **Multiclass ROC AUC Score** | 0.9643 |
+
+### Evaluation Metrics
+- **Confusion Matrix:**
+  - Analyzes correct and misclassified expressions across emotion categories.
+- **ROC-AUC Curve:**
+  - A mean AUC score of **0.96+** confirms high confidence in model predictions.
+- **Comparative Performance:**
+  - Outperforms traditional FER models like VGG-Face, Norface, and Multi-task EfficientNet-B2 on the AffectNet dataset.
+
+---
 
 ## Running the Model
 
 ### 1. Clone the Repository
 ```sh
- git clone https://github.com/yourusername/EmotionLens.git
- cd EmotionLens
+git clone https://github.com/yourusername/EmotionLens.git
+cd EmotionLens
 ```
 
 ### 2. Install Dependencies
@@ -77,13 +103,33 @@ Upload an image to test the emotion detection:
 python test_image.py --image sample.jpg
 ```
 
-## Acknowledgments
+---
 
-Special thanks to **Prof. Krishnaraj N** for guidance and support throughout this research. We also appreciate the contributions from the **VIT research community** and the open-source developers who provided essential tools and frameworks.
-
-## License
-
-This project is intended for academic and research use only. For commercial usage, please seek permission from the authors.
+## **Endpoints**
+| Method  | Endpoint       | Description |
+|---------|---------------|-------------|
+| **GET** | `/`           | Homepage - Image Upload Form |
+| **POST** | `/upload/`   | Upload and classify an image |
 
 ---
 
+## Acknowledgments
+
+We would like to express our sincere gratitude to:
+- **VIT University** for providing the platform and resources for this research.
+- **Prof. Krishnaraj Natarajan** for his continuous mentorship and insights.
+- **Contributors and researchers** in the field of FER whose work inspired and informed our approach.
+- **The open-source community** for valuable tools and frameworks that enabled the development of this model.
+
+---
+
+## License
+
+This project is released for **academic and research purposes only**.  
+You can view and access the source code from our repository, but **any commercial use or distribution requires prior permission**.
+
+🔗 **[EmotionLens Source Code](https://github.com/manvendrasingh09/EmotionLens/blob/main/Resources/EmotionLens.ipynb)**  
+
+For inquiries regarding licensing and usage, please contact the authors.
+
+---
