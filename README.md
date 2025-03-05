@@ -11,10 +11,11 @@ The project, **EmotionLens**, introduces a novel AI-powered facial expression re
 ## Contributors
 
 👨‍💻 **Manvendra Singh** - [Linkedin](https://www.linkedin.com/in/manvendrasingh09)  [Github](https://github.com/manvendrasingh09)
+
 👨‍💻 **Kshitiz Bhargava** - [Linkedin](https://www.linkedin.com/in/kshitiz-bhargava)  [Github](https://github.com/Kshitiz-b)
 
 > **Affiliation:** Department of Software Systems, School of Computer Science & Engineering, Vellore Institute of Technology, India.  
-> **Contact Emails:** m.s.jaunpur@gmail.com, kshitizbhargava2626@gmail.com
+> **Contact Emails:** m.s.jaunpur@gmail.com, kshitizb168@gmail.com
 
 ---
 
